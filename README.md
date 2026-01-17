@@ -1,0 +1,2 @@
+# Cyntrova
+AI AUTOMATION STARTUP
