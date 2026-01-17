@@ -1,0 +1,250 @@
+:root {
+    --primary-blue: #5c59f0;
+    --text-dark: #1a1a1a;
+    --text-muted: #666;
+    --bg-light: #f9faff;
+    --border-color: #eef0f7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Left Panel */
+.info-side {
+    flex: 1;
+    background-color: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.content-wrapper {
+    max-width: 500px;
+}
+
+.badge {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    letter-spacing: 1px;
+    border: 1px solid #e0e0f9;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 24px 0;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.highlight {
+    color: var(--primary-blue);
+}
+
+.subtitle {
+    color: var(--text-muted);
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.features {
+    list-style: none;
+}
+
+.features li {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.icon-check {
+    background: var(--primary-blue);
+    color: white;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.features strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.features p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.social-proof {
+    margin-top: 60px;
+    background: white;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.avatars span {
+    width: 30px;
+    height: 30px;
+    background: #dde1ee;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: -10px;
+    border: 2px solid white;
+}
+
+.social-proof p {
+    font-size: 12px;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+/* Right Panel */
+.form-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 450px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    background: var(--primary-blue);
+    border-radius: 8px;
+    /* Placeholder for the Cyntrova icon shape */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.form-sub {
+    color: var(--text-muted);
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.input-group label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    color: #999;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+input {
+    width: 100%;
+    padding: 14px 18px;
+    background: #f8f9fc;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #d1d5db;
+}
+
+button {
+    width: 100%;
+    background: var(--primary-blue);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(92, 89, 240, 0.3);
+}
+
+.login-link {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 25px;
+    color: var(--text-muted);
+}
+
+.login-link a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 60px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    padding-top: 30px;
+}
+
+footer p:first-child {
+    font-size: 10px;
+    font-weight: 700;
+    color: #bbb;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.fine-print {
+    font-size: 11px;
+    color: #aaa;
+    line-height: 1.4;
+}

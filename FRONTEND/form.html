@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyntrova | Early Access</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/20260114_120709.jpg" alt="logo">
+        </div>
+        <div class="security-badge">
+            <span class="shield-icon">🛡</span> BANK-GRADE SECURITY
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="content-side">
+            <p class="beta-tag">BETA PROGRAM</p>
+            <h1>Get early access <br> to <span>Cyntrova</span></h1>
+            <p class="description">Reduce manual invoice work before the public launch.</p>
+
+            <div class="benefits">
+                <p class="benefit-head">MEMBERSHIP BENEFITS</p>
+                <ul>
+                    <li><span class="check">✓</span> Be among the first CAs to use Cyntrova</li>
+                    <li><span class="check">✓</span> Shape V1 with direct feedback</li>
+                    <li><span class="check">✓</span> Early users get priority access & pricing</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form-side">
+            <div class="form-card">
+                <h2>Join the Waitlist</h2>
+                <p class="form-subtext">Enter your professional details to get priority access.</p>
+
+                <form name="contact" method="POST" data-netlify="true" action="thank.html" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p style="display:none">
+                        <label>Don’t fill this out: <input name="bot-field" /></label>
+                    </p>
+
+                    <div class="input-group">
+                        <label>FULL NAME</label>
+                        <input type="text" name="name" placeholder="e.g. Rahul Sharma" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>EMAIL ADDRESS</label>
+                        <input type="email" name="email" placeholder="rahul@firm.com" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label>YOUR ROLE</label>
+                        <select name="role" required>
+                            <option value="" disabled selected>Select your role</option>
+                            <option value="ca">Chartered Accountant</option>
+                            <option value="business-owner">Business Owner</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">REQUEST EARLY ACCESS</button>
+                </form>
+
+                <p class="footer-note">
+                    WE’LL INVITE A SMALL GROUP BEFORE THE PUBLIC LAUNCH.<br>
+                    NO SPAM. NO SALES CALLS.
+                </p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+:root {
+    --primary-blue: #5c59f0;
+    --dark-navy: #0f172a;
+    --text-muted: #64748b;
+    --success-green: #10b981;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.success-page { width: 100%; max-width: 600px; }
+
+/* Success Icon Styling */
+.success-header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.success-icon-badge {
+    width: 80px;
+    height: 80px;
+    background: var(--success-green);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px rgba(16, 185, 129, 0.2);
+    position: relative;
+}
+
+/* Creating the checkmark with CSS */
+.check-mark {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transform: rotate(45deg) scaleX(-1);
+    display: block;
+    margin-top: -5px;
+}
+
+h1 { font-size: 36px; color: var(--dark-navy); margin-bottom: 20px; letter-spacing: -1px; }
+.success-sub { color: var(--text-muted); line-height: 1.6; font-size: 16px; margin-bottom: 50px; }
+
+/* Limits Card Styling */
+.limits-card {
+    background: #f8fbff;
+    border-radius: 30px;
+    padding: 35px;
+    margin-bottom: 40px;
+}
+
+.card-title {
+    font-size: 11px;
+    font-weight: 800;
+    color: #94a3b8;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+}
+
+.limits-grid { display: flex; justify-content: space-between; gap: 20px; }
+.limit-item { flex: 1; text-align: left; }
+
+.limit-item label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 8px;
+}
+
+.limit-item strong { font-size: 18px; color: var(--dark-navy); }
+
+/* Button Styling */
+.login-workspace-btn {
+    display: inline-block;
+    background: var(--dark-navy);
+    color: white;
+    padding: 20px 60px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    transition: transform 0.2s;
+}
+
+.login-workspace-btn:hover { transform: translateY(-2px); }
+
+.upgrade-text { font-size: 10px; color: #94a3b8; font-weight: 800; letter-spacing: 1px; }
+
+/* Footer Styling */
+.success-footer { margin-top: 80px; }
+.success-footer hr { border: 0; border-top: 1px solid #f1f5f9; margin-bottom: 30px; }
+.success-footer p {
+    font-size: 10px;
+    color: #cbd5e1;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.8;
+}
